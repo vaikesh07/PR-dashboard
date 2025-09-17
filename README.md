@@ -2,7 +2,7 @@
 
 A simple, single-page dashboard to track the live CI/CD status of your GitHub Pull Requests.
 
-
+Give it a try for free : https://vaikesh07.github.io/PR-dashboard/
 
 ---
 
