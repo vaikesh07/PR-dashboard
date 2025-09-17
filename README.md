@@ -21,6 +21,7 @@ A simple, single-page dashboard to track the live CI/CD status of your GitHub Pu
         python3 -m http.server
         ```
 [or use Live Server option in VS Code]
+
 4.  **Use the Dashboard**
     * Open your browser to **`http://localhost:8000`**.
     * Paste your token and click **Save**.
