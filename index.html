@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub PR Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Pull Request Dashboard</h1>
+
+        <div class="settings">
+            <input type="password" id="pat-input" placeholder="Enter GitHub PAT">
+            <button id="save-pat">Save Token</button>
+        </div>
+
+        <form id="add-pr-form">
+            <input type="text" id="pr-url-input" placeholder="Paste a GitHub PR URL and press Enter" required>
+            <button type="submit">Add PR</button>
+        </form>
+
+        <div id="dashboard" class="dashboard-grid">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

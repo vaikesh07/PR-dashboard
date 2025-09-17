@@ -1,0 +1,115 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #58a6ff;
+}
+
+.settings, #add-pr-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+input[type="text"], input[type="password"] {
+    width: 400px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background-color: #010409;
+    color: #c9d1d9;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 16px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background-color: #21262d;
+    color: #c9d1d9;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #30363d;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.pr-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pr-card h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.pr-card a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.pr-card a:hover {
+    text-decoration: underline;
+}
+
+.pr-card .remove-btn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: #8b949e;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.checks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.status-icon {
+    font-weight: bold;
+}
+
+.status-success { color: #238636; }
+.status-failure { color: #f85149; }
+.status-pending { color: #d29922; }
+
+/* ⭐ --- NEW STYLE FOR WAITING CHECKS --- ⭐ */
+.status-expected { color: #8b949e; }
